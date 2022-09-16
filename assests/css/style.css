@@ -34,6 +34,26 @@ html {
 .text-center {
     text-align: center !important;
 }
+
+.pull-right {
+    float: right;
+}
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display:inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    
+}
+.btn:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
 .row {
     margin-left: -8px;
     margin-right: -8px;
@@ -217,7 +237,7 @@ html {
 .tickets-list{
     background-color: #fff;
     margin-top: 40px;
-}
+}      
 .tickets-list li{
     color: #757575;
     font-size: 15px;
@@ -277,19 +297,7 @@ html {
 .place-descrip{
     line-height: 1.4;
 }
-.place-buyBTN{
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display:inline-block;
-    margin-top: 15px;
-    cursor: pointer;
-}
-.place-buyBTN:hover{
-    color: #000;
-    background-color: #ccc;
-}
+
 
 .modal  {
     position: fixed;
@@ -417,15 +425,6 @@ html {
     width: 100%;
 }
 
-.contact-form .form-submit-btn {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    font-size: 15px;
-    padding: 10px 16px;
-    float: right;
-
-}
 
 /* Footer section */
 #footer {
