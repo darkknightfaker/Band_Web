@@ -36,7 +36,7 @@ html {
 }
 
 .pull-right {
-    float: right;
+    float: right !important;
 }
 .btn{
     color: #fff;
@@ -191,7 +191,7 @@ html {
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -266,7 +266,6 @@ html {
 
 .place-list{
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-item{
@@ -426,7 +425,35 @@ html {
 }
 
 
+/* Map section */
+.map-section img{
+    width: 100%;
+}
 /* Footer section */
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .social{
+    font-size: 24px;
+}
+
+#footer .social a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .social a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
