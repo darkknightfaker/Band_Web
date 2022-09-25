@@ -7,6 +7,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 /* 
 1. Tu ngoai vao trong
@@ -249,7 +250,6 @@ html {
 /* Tour section */
 .tour-section {
     background-color: #000;
-    animation: modalFadeIn ease 0.8s;
 }
 .tickets-list{
     background-color: #fff;
