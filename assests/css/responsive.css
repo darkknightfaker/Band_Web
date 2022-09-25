@@ -1,21 +1,34 @@
 /* Break Point
-  pc >= 1024px
+pc >= 1024px
   tablet >= 740px & < 1024px
   mobile < 740px
-*/
+  */
+  
+  /* PC */
+  @media (min-width: 1024px) {
+    
+  }
+  
+  /* Tablet  */ 
+  @media (min-width: 740px) and (max-width: 1023px) {
+    
+  }
+  
+  /* Mobile  */
+  @media (max-width: 739px) {
+    #header {
+      overflow: hidden;
+    }
+    
+    #header .search-btn {
+      display: none;
+      
+    }
+    
+    #header .mobile-menu-btn {
+      display: block;
+    }
 
-/* PC */
-@media (min-width: 1024px) {
-
-}
-
-/* Tablet  */ 
-@media (min-width: 740px) and (max-width: 1023px) {
-   
-}
-
-/* Mobile  */
-@media (max-width: 739px) {
   #nav {
     display: block;
   }
@@ -29,14 +42,19 @@
     display: inline-block;
   }
 
-  #header .search-btn {
-    display: none;
-    
+  #nav li a {
+    padding: 1px 24px;
   }
 
-  #header .mobile-menu-btn {
-    display: block;
+  #nav .subnav {
+    position: initial;
+    background-color: darkslategray;
   }
+  #nav .subnav a {
+    color: aliceblue;
+    padding: 5px 39px;
+  }
+
 
   
 }
