@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
     <link rel="stylesheet" href="./assests/Icon/themify-icons/themify-icons.css">
     <title>Band</title>
     <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/b/love-music-icon-logo-isolated-sign-symbol-vector-illustration-love-music-icon-logo-isolated-sign-symbol-vector-illustration-211522080.jpg">
@@ -19,7 +20,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -34,6 +35,10 @@
             <!-- Search Button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
         </div>
 
@@ -217,6 +222,7 @@
         </div>
     </div>
 
+    <!-- Buy Modal -->
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
@@ -242,6 +248,31 @@
         modalContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+    </script>
+
+    <!-- Open/Close Menu, Auto close when select -->
+    <script>
+        var header = document.getElementById('header');
+        var headerHeight = header.clientHeight;  
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = "auto";
+            }
+            else {
+                header.style.height = "46px";
+            }
+        }
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
     </script>
 </body>
 </html>

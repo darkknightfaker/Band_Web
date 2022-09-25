@@ -96,6 +96,7 @@ html {
 }
 
 #header {
+    overflow: hidden;
     height: 46px;
     background-color: #000;
     position: fixed;
@@ -149,15 +150,27 @@ html {
     font-size: 12px;
 }
 
-#header .search-btn{
+#header .mobile-menu-btn,
+#header .search-btn{ 
     float: right;
     padding: 0 16px;
 
 }
+
+#header .mobile-menu-btn:hover {
+    background-color: burlywood;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
 #header .search-btn:hover {
     background-color: burlywood;
     cursor: pointer;
 }
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 15px;
@@ -191,9 +204,12 @@ html {
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading, .section-sub-heading {
@@ -233,6 +249,7 @@ html {
 /* Tour section */
 .tour-section {
     background-color: #000;
+    animation: modalFadeIn ease 0.8s;
 }
 .tickets-list{
     background-color: #fff;
@@ -455,5 +472,7 @@ html {
 #footer .copyright a{
     color: rgba(0, 0, 0, 0.6);
 }
+
+
 
 
