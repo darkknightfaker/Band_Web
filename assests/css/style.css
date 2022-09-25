@@ -121,7 +121,7 @@ html {
 #nav li a{
     text-decoration: none;
     color: #fff;
-    display: inline-block;
+    display: block;
     position: relative;
     line-height: 46px;
     padding: 0 20px;
@@ -151,11 +151,18 @@ html {
     font-size: 12px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn{ 
     float: right;
     padding: 0 16px;
-
+    
 }
 
 #header .mobile-menu-btn:hover {
