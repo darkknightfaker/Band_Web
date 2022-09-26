@@ -240,7 +240,7 @@ html {
 }
 
 #content .band {
-    margin-top: 48px; 
+    margin-top: 32px; 
     /* overflow: hidden; */
 }
 #content .member-name{
@@ -288,7 +288,7 @@ html {
 }
 
 .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-item{
